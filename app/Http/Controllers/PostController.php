@@ -18,4 +18,16 @@ class PostController extends Controller
 
         return view("message", compact("message"));
     }
+
+    public function table()
+    {
+        $languages = [
+            "英語" => "日本語" ,
+            "apple" => "りんご" ,
+            "orange" => "みかん" ,
+            "banana" => "バナナ"
+        ];
+
+        return view('table', compact('languages'));
+    }
 }
