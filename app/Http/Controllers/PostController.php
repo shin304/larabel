@@ -11,4 +11,11 @@ class PostController extends Controller
     {
         return view('hello');
     }
+
+    public function message()
+    {
+        $message = "Hello World";
+
+        return view('message',compact('message'));
+    }
 }

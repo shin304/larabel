@@ -16,3 +16,5 @@ Route::get('/', function () {
 });
 
 Route::get('hello','PostController@sayHello');
+
+Route::get('message','PostController@message');
