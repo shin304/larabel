@@ -22,7 +22,6 @@ class PostController extends Controller
     public function table()
     {
         $languages = [
-            "英語" => "日本語" ,
             "apple" => "りんご" ,
             "orange" => "みかん" ,
             "banana" => "バナナ"
