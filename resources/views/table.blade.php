@@ -5,10 +5,10 @@
         <title>Laravel-004</title>
     </head>
     <body>
-        <table border = '1' style="border-collapse:collapse;">
-            <th>英語</th>
-            <th>日本語</th>
-                @foreach ($languages as $key => $value)
+        <table border = '3'>
+            <th>{{$language[0]}}</th>
+            <th>{{$language[1]}}</th>
+                @foreach ($translate as $key => $value)
                     <tr>
                         <td>{{$key}}</td>
                         <td>{{$value}}</td>
