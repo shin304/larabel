@@ -21,13 +21,14 @@ class PostController extends Controller
 
     public function table()
     {
-        $languages = [
-            "英語" => "日本語" ,
+        $language = ["英語", "日本語"];
+
+        $translate = [
             "apple" => "りんご" ,
             "orange" => "みかん" ,
             "banana" => "バナナ"
         ];
 
-        return view('table', compact('languages'));
+        return view('table', compact('language','translate'));
     }
 }

@@ -15,8 +15,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('hello', 'PostController@sayHello');
+Route::get('/hello', 'PostController@sayHello');
 
-Route::get('message', 'PostController@message');
+Route::get('/message', 'PostController@message');
 
-Route::get('table', 'PostController@table');
+Route::get('/table', 'PostController@table');
