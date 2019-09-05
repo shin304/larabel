@@ -20,3 +20,5 @@ Route::get('/hello', 'PostController@sayHello');
 Route::get('/message', 'PostController@message');
 
 Route::get('/table', 'PostController@table');
+
+ROute::get('/translate', 'PostController@index');
