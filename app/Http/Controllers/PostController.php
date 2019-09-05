@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Translation;
 
 class PostController extends Controller
 {
@@ -30,5 +31,14 @@ class PostController extends Controller
         ];
 
         return view('table', compact('language','translate'));
+    }
+
+    public function index()
+    {
+        $languages = ["英語", "日本語"];
+
+        $translations = Translation::all();
+//        dd($translations->toArray()); // dump die
+        return view('index',compact('languages','translations'));
     }
 }
