@@ -40,4 +40,14 @@ class PostController extends Controller
         $translations = Translation::all();
         return view('index',compact('languages','translations'));
     }
+
+    public function form(Request $request)
+    {
+        $translation = new Translation;
+        $translation->english = $request->english;
+        $translation->japanese = $request->japanese;
+        $translation->save();
+
+        return view('form');
+    }
 }
