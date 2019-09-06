@@ -21,7 +21,7 @@ Route::get('/message', 'PostController@message');
 
 Route::get('/table', 'PostController@table');
 
-ROute::get('/translate', 'PostController@index');
+Route::get('/translate', 'PostController@index');
 
 Route::get('/form','PostController@form');
 Route::post('/form','PostController@form');
